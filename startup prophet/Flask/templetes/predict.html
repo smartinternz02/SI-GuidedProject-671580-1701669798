@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction - Startup Success Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    
+
+    <!-- Prediction Section -->
+    <section id="prediction" class="section">
+        <div class="container">
+            <h2>Predict Startup Success</h2>
+            <form id="predictionForm">
+                <label for="closedAt">Closed At:</label>
+                <input type="text" id="closedAt" required><br><br>
+                <label for="relationships">Relationships (1-10):</label>
+                <input type="number" id="relationships" min="1" max="10" required><br><br>
+                <label for="milestones">Milestones (1-10):</label>
+                <input type="number" id="milestones" min="1" max="10" required><br><br>
+                <label for="isTop500">Is Top 500? (yes/no):</label>
+                <select id="isTop500" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="ageLastMilestoneYear">Age Last Milestone Year:</label>
+                <input type="number" id="ageLastMilestoneYear" required><br><br>
+                <label for="hasRoundB">Has Round B? (yes/no):</label>
+                <select id="hasRoundB" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <label for="fundingRounds">Funding Rounds: </label>
+                <input type="number" id="fundingRounds" required><br><br>
+                <label for="ageParticipants">Age Participants:</label>
+                <input type="number" id="ageParticipants" required><br><br>
+                <label for="hasRoundA">Has Round A? (yes/no):</label>
+                <select id="hasRoundA" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <button type="submit">Predict</button>
+            </form>
+            <p id="predictionResult"></p>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="prediction.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    margin: 15vh;
+    padding: 4vh;
+    padding-right: 90vh;
+    background-image: url("image1.jpg");
+    
+    
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+h2{
+    text-align: center;
+
+    
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.form-column {
+    flex-basis: 30%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.left {
+    order: 1;
+}
+
+.middle {
+    order: 2;
+}
+
+.right {
+    order: 3;
+}
+
+form {
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
